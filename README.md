@@ -38,18 +38,6 @@
 
 [项目主页与下载](https://github.com/AdguardTeam/AdGuardMiniForMac)
 
-## 开发辅助
-
-### [CC Switch](https://github.com/farion1231/cc-switch)
-
-集中管理 Claude Code、Codex 等 AI 编程工具的服务商和配置。
-
-![CC Switch 主界面](https://raw.githubusercontent.com/farion1231/cc-switch/main/assets/release-notes/v4.0.0/main-en.png)
-
-![CC Switch 应用管理界面](https://raw.githubusercontent.com/farion1231/cc-switch/main/assets/release-notes/v4.0.0/apps-en.png)
-
-[项目主页与下载](https://github.com/farion1231/cc-switch)
-
 ---
 
 图片和软件归各自作者所有；本仓库仅作个人工具整理，不包含应用安装包或本机配置。
