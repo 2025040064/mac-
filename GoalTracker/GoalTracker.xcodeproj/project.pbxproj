@@ -1,0 +1,44 @@
+// !$*UTF8*$!
+{
+archiveVersion = 1;
+classes = {};
+objectVersion = 56;
+objects = {
+	000000000000000000000001 /* Shared/Competition.swift */ = {isa = PBXFileReference; path = "Shared/Competition.swift"; sourceTree = "<group>";};
+	000000000000000000000002 /* App/GoalTracker.swift */ = {isa = PBXFileReference; path = "App/GoalTracker.swift"; sourceTree = "<group>";};
+	000000000000000000000003 /* App/ImportServer.swift */ = {isa = PBXFileReference; path = "App/ImportServer.swift"; sourceTree = "<group>";};
+	000000000000000000000004 /* Widget/Board.swift */ = {isa = PBXFileReference; path = "Widget/Board.swift"; sourceTree = "<group>";};
+	000000000000000000000005 /* Config/App.plist */ = {isa = PBXFileReference; path = "Config/App.plist"; sourceTree = "<group>";};
+	000000000000000000000006 /* Config/Widget.plist */ = {isa = PBXFileReference; path = "Config/Widget.plist"; sourceTree = "<group>";};
+	000000000000000000000007 /* Config/App.entitlements */ = {isa = PBXFileReference; path = "Config/App.entitlements"; sourceTree = "<group>";};
+	000000000000000000000008 /* Config/Widget.entitlements */ = {isa = PBXFileReference; path = "Config/Widget.entitlements"; sourceTree = "<group>";};
+	000000000000000000000009 /* GoalTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = GoalTracker.app; sourceTree = BUILT_PRODUCTS_DIR;};
+	00000000000000000000000A /* GoalTrackerWidget.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; path = GoalTrackerWidget.appex; sourceTree = BUILT_PRODUCTS_DIR;};
+	00000000000000000000000B /* Products */ = {isa = PBXGroup; name = Products; children = (000000000000000000000009, 00000000000000000000000A, ); sourceTree = "<group>";};
+	00000000000000000000000C /* Root */ = {isa = PBXGroup; children = (000000000000000000000001, 000000000000000000000002, 000000000000000000000003, 000000000000000000000004, 000000000000000000000005, 000000000000000000000006, 000000000000000000000007, 000000000000000000000008, 00000000000000000000000B, ); sourceTree = "<group>";};
+	00000000000000000000000D /* Embedded widget */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000A; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); };};
+	00000000000000000000000E /* Embed App Extensions */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = ""; dstSubfolderSpec = 13; files = (00000000000000000000000D, ); name = "Embed App Extensions"; runOnlyForDeploymentPostprocessing = 0;};
+	000000000000000000000011 /* Widget proxy */ = {isa = PBXContainerItemProxy; containerPortal = 00000000000000000000000F; proxyType = 1; remoteGlobalIDString = 000000000000000000000010; remoteInfo = GoalTrackerWidget;};
+	000000000000000000000012 /* Widget dependency */ = {isa = PBXTargetDependency; target = 000000000000000000000010; targetProxy = 000000000000000000000011;};
+	000000000000000000000013 /* Project Debug */ = {isa = XCBuildConfiguration; buildSettings = {MACOSX_DEPLOYMENT_TARGET = 27.0; SDKROOT = macosx; SWIFT_VERSION = 6.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf;}; name = Debug;};
+	000000000000000000000014 /* Project Release */ = {isa = XCBuildConfiguration; buildSettings = {MACOSX_DEPLOYMENT_TARGET = 27.0; SDKROOT = macosx; SWIFT_VERSION = 6.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";}; name = Release;};
+	000000000000000000000015 /* Project configs */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000013, 000000000000000000000014, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+	000000000000000000000016 /* App Shared/Competition.swift */ = {isa = PBXBuildFile; fileRef = 000000000000000000000001;};
+	000000000000000000000017 /* App App/GoalTracker.swift */ = {isa = PBXBuildFile; fileRef = 000000000000000000000002;};
+	000000000000000000000018 /* App App/ImportServer.swift */ = {isa = PBXBuildFile; fileRef = 000000000000000000000003;};
+	000000000000000000000019 /* App sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000016, 000000000000000000000017, 000000000000000000000018, ); runOnlyForDeploymentPostprocessing = 0;};
+	00000000000000000000001A /* GoalTracker Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CODE_SIGN_ENTITLEMENTS = Config/App.entitlements; INFOPLIST_FILE = Config/App.plist; PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.goaltracker.mac; ENABLE_HARDENED_RUNTIME = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf;}; name = Debug;};
+	00000000000000000000001B /* GoalTracker Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CODE_SIGN_ENTITLEMENTS = Config/App.entitlements; INFOPLIST_FILE = Config/App.plist; PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.goaltracker.mac; ENABLE_HARDENED_RUNTIME = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";}; name = Release;};
+	00000000000000000000001C /* GoalTracker configs */ = {isa = XCConfigurationList; buildConfigurations = (00000000000000000000001A, 00000000000000000000001B, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+	00000000000000000000001D /* GoalTracker */ = {isa = PBXNativeTarget; buildConfigurationList = 00000000000000000000001C; buildPhases = (000000000000000000000019, 00000000000000000000000E, ); buildRules = (); dependencies = (000000000000000000000012, ); name = GoalTracker; productName = GoalTracker; productReference = 000000000000000000000009; productType = "com.apple.product-type.application";};
+	00000000000000000000001E /* Widget Shared/Competition.swift */ = {isa = PBXBuildFile; fileRef = 000000000000000000000001;};
+	00000000000000000000001F /* Widget Widget/Board.swift */ = {isa = PBXBuildFile; fileRef = 000000000000000000000004;};
+	000000000000000000000020 /* Widget sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (00000000000000000000001E, 00000000000000000000001F, ); runOnlyForDeploymentPostprocessing = 0;};
+	000000000000000000000021 /* GoalTrackerWidget Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CODE_SIGN_ENTITLEMENTS = Config/Widget.entitlements; INFOPLIST_FILE = Config/Widget.plist; PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.goaltracker.mac.widget; APPLICATION_EXTENSION_API_ONLY = YES; SKIP_INSTALL = YES; ENABLE_HARDENED_RUNTIME = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf;}; name = Debug;};
+	000000000000000000000022 /* GoalTrackerWidget Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CODE_SIGN_ENTITLEMENTS = Config/Widget.entitlements; INFOPLIST_FILE = Config/Widget.plist; PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.goaltracker.mac.widget; APPLICATION_EXTENSION_API_ONLY = YES; SKIP_INSTALL = YES; ENABLE_HARDENED_RUNTIME = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";}; name = Release;};
+	000000000000000000000023 /* GoalTrackerWidget configs */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000021, 000000000000000000000022, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+	000000000000000000000010 /* GoalTrackerWidget */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000023; buildPhases = (000000000000000000000020, ); buildRules = (); dependencies = (); name = GoalTrackerWidget; productName = GoalTrackerWidget; productReference = 00000000000000000000000A; productType = "com.apple.product-type.app-extension";};
+	00000000000000000000000F /* Project */ = {isa = PBXProject; attributes = { LastUpgradeCheck = 2700; }; buildConfigurationList = 000000000000000000000015; compatibilityVersion = "Xcode 14.0"; developmentRegion = "zh-Hans"; knownRegions = ("zh-Hans", Base); mainGroup = 00000000000000000000000C; productRefGroup = 00000000000000000000000B; projectDirPath = ""; projectRoot = ""; targets = (00000000000000000000001D, 000000000000000000000010, );};
+};
+rootObject = 00000000000000000000000F;
+}
