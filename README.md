@@ -44,6 +44,10 @@
 
 用桌面倒计时卡片和赛程列表管理比赛与学习目标。
 
+![GoalTracker 倒计时卡片示意图，使用示例赛程](images/goaltracker-preview.png)
+
+*效果示意图，赛程和倒计时为示例。*
+
 [查看源码与使用说明](GoalTracker/README.md) · [下载本机版](downloads/GoalTracker-macOS.zip)
 
 本机版需要 macOS 27 或更高版本；桌面卡片是可拖动窗口，原生 WidgetKit 版本需要按说明配置签名后构建。
